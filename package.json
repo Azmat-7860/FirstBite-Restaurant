@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/Azmat-7860/FirstBite-Restaurant.git",
+  "homepage": "https://Azmat-7860.github.io/FirstBite-Restaurant",
   "name": "foodservice",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
