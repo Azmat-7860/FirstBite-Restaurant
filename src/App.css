@@ -1,0 +1,190 @@
+#root {
+
+  margin: 0 ;
+  text-align: center;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-sec {
+  width: 100%;
+  height: 100vh;
+  background: url("./Images/restaurant 1.png") no-repeat center center/cover;
+}
+
+.home-sec .bg-brand {
+  background-color: white;
+  padding: 0 0 0 5px;
+  color: var(--red-color);
+  margin-right: 4px;
+  border-radius: 5px;
+
+}
+
+.home-btn {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.4s ease;
+  font-size: large;
+}
+
+.home-btn:hover {
+    border: 1px solid var(--red-color);
+ 
+  color: var(--red-color);
+}
+
+/*-----------------------cart Page--------------- */
+.cart-sec {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--white-color);
+}
+.cart-text {
+  position: relative; 
+  display: inline-block; 
+}
+
+.cart-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 100%;
+  height: 3px;
+  background-color: var(--red-color);
+}
+
+.cart-item{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cart-item img{
+height: 60px;
+width: 60px;
+}
+ .cart-item button{
+  border: none;
+  background-color: transparent;
+  color: black;
+ }
+ .checkOut-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px ;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cart-total-box {
+  background-color: var(--white-color);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cart-promo-box{
+  padding: 10px;
+  border: 1px solid #cfe2ff;
+  border-top: none;
+  border-radius:0 0 10px  10px;
+}
+.cart-promo-box input{
+  border: 1px solid #cfe2ff;
+}
+
+/* -------------------------sidebar -------------------------- */
+.sidebar{
+  width: 110px;
+  height: 70vh;
+  background-color:rgba(0, 0, 0, 0.919);
+  box-shadow: 5px 4px 8px rgba(0, 0, 0,0.4);
+  border-radius: 15px;
+}
+/* Link{
+  text-decoration: none;
+} */
+
+/* ----------------------Menu Section -------------------- */
+.Menu-sec {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--white-color);
+}
+.food-item  {
+  width: 150px;
+  height: 175px;
+
+}
+.food-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.Menu-option::-webkit-scrollbar{
+display: none;
+}
+.Menu-items {
+  overflow-y: auto;
+  height: 70vh;
+}
+.Menu-items::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+/* ----------------------------- */
+/* Flip card container */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 120px;
+  perspective: 600px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.flip-card-back {
+  background: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
