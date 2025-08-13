@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 export const SideBar = () => {
   return (
-    <div className="sidebar d-flex flex-column align-items-center justify-content-evenly m-3">
+    <div className="sidebar  m-3">
       <div className='sidebar-btn text-center p-2 w-100'>
         <h3 className=" fs-1 text-white mb-0">FB.</h3>
       </div>

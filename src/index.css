@@ -16,6 +16,10 @@
   --red-color : #f80707; /* Red color */
   --white-color : #ffffff; /* White color */
   
+  
 }
 
-
+*::-webkit-scrollbar {
+    width: 0px;    /* Vertical scrollbar width */
+    height: 0px;   /* Horizontal scrollbar height */
+}

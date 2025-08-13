@@ -1,0 +1,19 @@
+@media (max-width: 767px) {
+    .sidebar{
+        height: 90px;
+        width: 85vw;
+        display: flex;
+        flex-direction: row !important;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 991px) {
+       .sidebar{
+        height: 110px;
+        width: 70vw;
+        display: flex;
+        flex-direction: row !important ;
+    }
+}
+
+@media (min-width : 992px) {}

@@ -1,8 +1,9 @@
-import React, { use, useEffect } from 'react'
+import React, { use, useContext, useEffect } from 'react'
 import { LiaCartPlusSolid } from "react-icons/lia";
+import { CartContext } from '../Utils/CartContext';
 
 export const FoodItem = ({food}) => {
-   
+   const {addCartFood} = useContext(CartContext)
     return (
     <div className="col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2">
       <div className="food-item p-2 border border-1">
@@ -18,7 +19,7 @@ export const FoodItem = ({food}) => {
         </div>
         <div className='d-flex justify-content-between align-items-center'>
           <h5 className='mt-2 ms-1 fw-bold'>₹ {food.price}</h5>
-          <button className='border-0 bg-white text-black fs-3 m-0 fw-bolder p-0 px-1'><LiaCartPlusSolid /></button>
+          <button onClick={()=> addCartFood(food.foodid,food.name,food.price,food.image)} className='border-0 bg-white text-black fs-3 m-0 fw-bolder p-0 px-1'><LiaCartPlusSolid /></button>
         </div>
       </div>
     </div>

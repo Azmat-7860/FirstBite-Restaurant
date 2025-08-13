@@ -11,9 +11,11 @@ const FoodSection = () => {
      MyFood = foodOption === "All" ? foodDetails : foodDetails.filter((item) => item.categories === foodOption);
 
  
-  return <div className="Menu-sec container py-2 d-flex align-items-center column-gap-3">
+  return <div className="Menu-sec container py-2 d-flex flex-wrap flex-lg-nowrap align-items-center column-gap-3">
+   <div className=" order-2 order-lg-1 m-auto m-lg-0">
     <SideBar />
-    <div className='Menu-box w-100'>
+    </div> 
+    <div className='Menu-box w-100 order-1 order-lg-2'>
       <div className='text-start'>
         <h2 className=" cart-text  fw-bold text-uppercase ">Menu </h2>
       </div>
