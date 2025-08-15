@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FaHome } from "react-icons/fa";
 import { IoRestaurant } from "react-icons/io5";
 import { TiShoppingCart } from "react-icons/ti";
@@ -7,6 +7,7 @@ import { TbLogout } from "react-icons/tb";
 import { Link } from 'react-router-dom';
 
 export const SideBar = () => {
+
   return (
     <div className="sidebar  m-3">
       <div className='sidebar-btn text-center p-2 w-100'>
